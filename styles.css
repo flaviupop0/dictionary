@@ -11,29 +11,43 @@ h1 {
     margin-bottom: 30px;
 }
 
-.row {
-    margin-bottom: 20px;
-}
-
-.btn {
-    width: 100%;
-}
-
 #wordContainer {
     border: 1px solid #ced4da;
     padding: 15px;
     border-radius: 5px;
     background-color: #fff;
-    max-width: 600px;
-    max-height: 200px;
+    max-width: 670px;
     margin: 0 auto;
     overflow: auto;
+    margin-bottom: 10px;
+}
+
+.word-container,
+.word-definition-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.word-container {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ced4da;
+    overflow-wrap: break-word;
+}
+
+.word,
+.definition {
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-all;
 }
 
 #wordContainer p {
     margin: 0;
-    padding: 5px;
-    border-bottom: 1px solid #ced4da;
+    white-space: normal;
 }
 
 .word {
@@ -43,6 +57,12 @@ h1 {
 .word.highlighted {
     background-color: yellow;
     transition: background-color 2s;
+}
+
+.delete-button {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: 5px;
 }
 
 .separator {
@@ -61,12 +81,8 @@ button {
     white-space: pre-line;
 }
 
-.first-button {
+.first-button,
+.cutom-input {
     margin-top: 5px;
     margin-left: -5px;
-}
-
-.cutom-input {
-    margin-left: 5px;
-    margin-top: 5px;
 }
