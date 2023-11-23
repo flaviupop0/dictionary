@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+}
+
+#wordContainer {
+    border: 1px solid #ced4da;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 600px;
+    max-height: 200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#wordContainer p {
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ced4da;
+}
+
+.word {
+    margin-right: 5px;
+}
+
+.word.highlighted {
+    background-color: yellow;
+    transition: background-color 2s;
+}
+
+.separator {
+    color: gray;
+}
+
+.definition {
+    margin-left: 5px;
+}
+
+button {
+    white-space: nowrap;
+}
+
+.modal-body {
+    white-space: pre-line;
+}
+
+.first-button {
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.cutom-input {
+    margin-left: 5px;
+    margin-top: 5px;
+}
